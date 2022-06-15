@@ -6,7 +6,7 @@ __Metadta Root Element__
 
 | Name    | Type    | Description | Example |
 | ------- | ------- | ----------- | ------- |
-| [shopping](#shopping) | object |  |  |
+| [shopping](#shopping) | object | Booking Flow Related Metadata |  |
 
 *****
 
@@ -14,13 +14,13 @@ __Metadta Root Element__
 
 #### Type: object
 
-__add description to json file__
+__Booking Flow Related Metadata__
 
 Required: languages, currencies, price, nationalities, markets, paymentTypes, accomodationTypes, rateRules, operations, implementsCombination, timeZone
 
 | Name    | Type    | Description | Example |
 | ------- | ------- | ----------- | ------- |
-| [languages](#languages) | object |  |  |
+| [languages](#languages) | object | Defines the accepted lenguages by the Seller |  |
 | [currencies](#currencies) | object |  |  |
 | [price](#price) | object |  |  |
 | [nationalities](#nationalities) | object |  |  |
@@ -38,17 +38,16 @@ Required: languages, currencies, price, nationalities, markets, paymentTypes, ac
 
 #### Type: object
 
-__add description to json file__
+__Defines the accepted lenguages by the Seller__
 
 Required: all, includes, excludes, reviewDate
 
 | Name    | Type    | Description | Example |
 | ------- | ------- | ----------- | ------- |
-| all | boolean |  |  |
-| [description](#description) | undefined |  |  |
-| includes | array |  |  |
-| excludes | array |  |  |
-| reviewDate | string |  |  |
+| all | boolean | Defines if all Lenguages are included by default or not |  |
+| includes | array | Defines the included Languages if all is false |  |
+| excludes | array | Defines the excluded Languages if all is true |  |
+| reviewDate | string | Defines the last review date of the Language Field |  |
 
 *****
 
